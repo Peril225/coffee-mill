@@ -1,0 +1,561 @@
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansextrabold';
+    src: url('../fonts/opensans-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../fonts/opensans-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Main CSS*/
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #ffffff;
+    width: 100%;
+    height: 145px;
+    display: block;
+    float: left;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px 0 0 0;
+}
+
+.logo{
+    float: left;
+    display: inline-block;
+}
+
+.container img{
+    vertical-align: middle;
+    border-style: none;
+    max-width: 100%;
+}
+
+.container .nav{
+    display: flex;
+    flex-basis: auto;
+}
+
+.container .nav .nav-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: auto;
+    margin-top: 0;
+}
+
+.container .nav .nav-wrap .nav-up{
+    margin-bottom: 35px;
+}
+/* Top 2 number + Request Quote CSS*/
+.container .nav .nav-wrap .nav-up .num1,
+.container .nav .nav-wrap .nav-up .num2{
+    font-family: 'open_sansbold';
+    font-size: 16px;
+    color: #706d68;
+    line-height: 30px;
+    float: right;
+    text-decoration: none;
+}
+
+.container .nav .nav-wrap .nav-up .num1::before{
+    content: '';
+    border-right: 1px solid #706d68;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.container .nav .nav-wrap .nav-up .request-quote{
+    font-family: 'open_sansbold';
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-right: 15px;
+    border-radius: 0;
+    line-height: 30px;
+    text-decoration: none;
+    background-color: #706d68;
+    padding: 0 20px;
+    font-weight: 400;
+    float: right;
+    text-align: center;
+}
+/*Menu CSS*/
+.container .nav .nav-wrap .menu{
+    margin-top: 10px;
+}
+
+.container .nav .nav-wrap .menu ul{
+    flex-direction: row;
+    margin-left: auto;
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    margin-top: 0;
+}
+
+.container .nav .nav-wrap .menu ul li{
+    display: list-item;
+}
+
+.container .nav .nav-wrap .menu ul li a{
+    font-family: 'open_sansbold';
+    font-size: 18px;
+    color: #201547;
+    margin: 0 15px;
+    padding: 0;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+    display: block;
+}
+
+.container .nav .nav-wrap .menu ul li .active:before{
+    content: '';
+    border-top: 3px solid #dedddb;
+    top: -7px;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+/*Image CSS*/
+.banner{
+    background-image: url(../images/banner.png);
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.banner .container{
+    max-width: 1170px;
+    height: 100%;
+    display: flex;
+}
+
+.banner .container .text{
+    width: 100%;
+    align-self: center;
+    justify-content: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.banner .container .text .text-center{
+    text-align: center;
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+/*about Us Text CSS*/
+.banner .container .text .text-center h1{
+    font-family: 'open_sanslight';
+    font-size: 72px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 0 30px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+
+
+/*Section 1 CSS*/
+.section1 {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.section1 .container {
+    max-width: 1170px;
+}
+
+.section1 .container h1{
+    font-family: 'open_sanslight';
+    font-size: 36px;
+    color: #201547;
+    margin: 0 0 25px;
+    font-weight: 300;
+}
+
+.section1 .container .subtitle{
+    font-family: 'open_sansbold';
+    font-size: 22px;
+    color: #7c2629;
+    margin: 0 0 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section1 .container p{
+    font-family: 'open_sanslight';
+    font-size: 18px;
+    color: #201547;
+    margin: 0 0 25px;
+}
+
+.section1 .container span{
+    font-family: 'open_sansbold';
+    font-size: 18px;
+    color: #201547;
+    display: block;
+    margin: 0 0 50px;
+}
+
+.section1 .container a{
+    font-family: 'open_sansbold';
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: 2px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0 50px;
+    border-radius: 1px;
+    text-decoration: none;
+    background-color: #7c2629;
+}
+
+
+
+
+
+/*Section 2 CSS*/
+.section2 {
+    background-color: #eeeeed;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.section2 .container {
+    max-width: 1170px;
+
+}
+
+.section2 .container h3 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    flex: 0 0 50%;
+    max-width: 50%;
+    font-family: 'open_sanslight';
+    font-size: 36px;
+    color: #201547;
+    margin: 0 0 25px;
+    font-weight: 300;
+    line-height: 1.2;
+
+}
+
+.section2 .container p {
+    font-family: 'open_sanslight';
+    font-size: 18px;
+    color: #201547;
+    margin: 0 0 25px;
+}
+
+.section2 .container ul {
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    list-style: disc;
+}
+
+.section2 .container ul li {
+    font-family: 'open_sanslight';
+    font-size: 18px;
+    color: #201547;
+    list-style: none;
+    overflow: hidden;
+}
+
+.section2 .container ul li:before {
+    content: '.';
+    font-size: 30pt;
+    margin-right: 10px;
+    margin-top: -29px;
+    vertical-align: top;
+    float: left;
+    height: 45px;
+    left: 15px;
+}
+
+.section2 .container ul li b {
+    font-family: 'open_sansbold';
+    color: #201547;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.section2 .container .secondside {
+    background-color: #dedddb;
+    padding: 100px 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    flex: 0 0 50%;
+    max-width: 50%;
+    width: 600px;
+}
+
+.section2 .container .secondside h3{
+    font-family: 'open_sanslight';
+    font-size: 36px;
+    color: #201547;
+    margin: 0 0 25px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.section2 .container .secondside p{
+    font-family: 'open_sanslight';
+    font-size: 18px;
+    color: #201547;
+    margin: 0 0 25px;
+}
+
+.section2 .container .secondside p b{
+    font-family: 'open_sansbold';
+    color: #201547;
+    font-size: 18px;
+}
+
+.section2 .container .secondside img{
+    width: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+    height: auto;
+}
+
+
+
+/*Section 3 (History) CSS*/
+.section3{
+    width:100%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+.section3 .container{
+    max-width: 1170px;
+}
+.section3 .container h3{
+    font-family: 'open_sanslight';
+    font-size: 36px;
+    color: #201547;
+    margin: 0 0 25px;
+    font-weight: 500;
+}
+.section3 .container .subtitle{
+    font-family: 'open_sansbold';
+    font-size: 22px;
+    color: #7c2629;
+    margin: 0 0 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.section3 .container p{
+    font-family: 'open_sanslight';
+    font-size: 18px;
+    color: #201547;
+    margin: 0 0 25px;
+}
+
+.section3 .container span{
+    font-family: 'open_sansbold';
+    font-size: 18px;
+    color: #201547;
+    margin: 0 0 2px;
+    display: block;
+}
+
+.section3 .container a{
+    font-family: 'open_sansbold';
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: 2px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0 50px;
+    border-radius: 1px;
+    text-decoration:none;
+    background-color: #7c2629;
+    cursor: pointer;
+}
+
+
+/*Sign Up Footer CSS*/
+footer {
+    width: 100%;
+    vertical-align: top;
+}
+
+footer .up {
+    background-color: #706d68;
+    height: 180px;
+}
+
+
+footer .up .container {
+    max-width: 1170px;
+}
+
+footer .up .container .row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+footer .up .container .row .colleft {
+    max-width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+footer .up .container .row .colleft p {
+    font-family: 'open_sanslight';
+    font-size: 36px;
+    color: #fff;
+    text-transform: none;
+    letter-spacing: normal;
+    margin-top: 50px;
+}
+
+footer .up .container .row .colright {
+    max-width: 60%;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: right;
+}
+
+footer .up .container .row .colright .form {
+    display: inline;
+}
+
+footer .up .container .row .colright .input1 {
+    left: 0;
+    margin-top: -85px;
+}
+
+.inputs {
+    width: 367px;
+    height: 50px;
+    padding-left: 9px;
+    font-size: 20px;
+    color: #113743;
+    font-family: 'open_sanslight';
+    font-weight: 300;
+    border: none;
+    margin-right: 15px;
+}
+footer .up .container .row .colright .input1 .btnsub {
+    text-decoration: none;
+    padding: 17px 50px 13px;
+    background-color:#7c2629;
+    font-family: 'open_sansbold';
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/*Last Section (Light Grey Contant) CSS*/
+
+.footer-info{
+    background-color: #aca9a4;
+    height: 245px;
+}
+.footer-info .container .lastlogo{
+    float: left;
+    padding: 30px 0;
+}
+.footer-info .container .lastlogo img{
+    width: 170px;
+    vertical-align: middle;
+    height: 145px;
+}
+.footer-info .container .right-contant{
+    float: left;
+    padding: 30px 0;
+    margin-left: 50px;
+}
+.footer-info .container .right-contant p{
+    color: #fff;
+    font-family: 'open_sanslight';
+    font-size: 18px;
+    margin: 0;
+}
+.footer-info .container .right-contant a{
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+}
